@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "name": "Julieta",
+    "old": "6",
+    "animal": "perro",
+    "color": "verde",
+    "sickness": "moquillo"
+  },
+  {
+    "name": "benito",
+    "old": "2",
+    "animal": "perro",
+    "color": "blanco",
+    "sickness": "vomitos"
+  }
+]

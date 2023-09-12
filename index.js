@@ -2,10 +2,10 @@ const { register, readDates } = require('./operaciones');
 
 const arguments = process.argv.slice(2);
 
-const [operations, name, animal, sickness] = arguments;
+const [operations, name, old, animal, color, sickness] = arguments;
 
 if (operations === "register") {
-    register(name, animal, sickness);
+    register(name, old, animal, color, sickness);
 } else if (operations === "readDates") {
     readDates();
 } else {
