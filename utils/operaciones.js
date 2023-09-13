@@ -3,7 +3,7 @@ const fs = require('fs');
 const register = (name, old, animal, color, sickness) => {
     let dates = [];
     try {
-        dates = JSON.parse(fs.readFileSync('citas.json', 'utf-8'));
+        dates = JSON.parse(fs.readFileSync('db/citas.json', 'utf-8'));
     } catch (error) {
         dates = [];
     }
@@ -18,14 +18,14 @@ const register = (name, old, animal, color, sickness) => {
 
     dates.push(newRegister);
 
-    fs.writeFileSync('citas.json', JSON.stringify(dates, null, 2));
+    fs.writeFileSync('db/citas.json', JSON.stringify(dates, null, 2));
 
     console.log('Cita registrada con éxito.');
 };
 
 const readDates = () => {
     try {
-        const dates = JSON.parse(fs.readFileSync('citas.json', 'utf-8'));
+        const dates = JSON.parse(fs.readFileSync('db/citas.json', 'utf-8'));
         console.log('Lista de citas:');
         console.log(dates);
     } catch (error) {

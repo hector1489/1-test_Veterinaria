@@ -1,4 +1,4 @@
-const { register, readDates } = require('./operaciones');
+const { register, readDates } = require('./utils/operaciones');
 
 const arguments = process.argv.slice(2);
 
