@@ -1,8 +1,8 @@
 const { register, readDates } = require('./utils/operaciones');
 
-const arguments = process.argv.slice(2);
+const nameArguments = process.argv.slice(2);
 
-const [operations, name, old, animal, color, sickness] = arguments;
+const [operations, name, old, animal, color, sickness] = nameArguments;
 
 if (operations === "register") {
     register(name, old, animal, color, sickness);
